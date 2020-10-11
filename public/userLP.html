@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head>
+
+</head>
+
+<body>
+    <div class="ui container">
+        <div class="ui grid">
+            <div id="sidebar-cases" class="ui left demo vertical inverted very wide sidebar labeled icon menu">
+                <a class="item">
+                    <i class="home icon"></i>
+                    Home
+                </a>
+            </div>
+
+            <div class="four wide column">
+
+            </div>
+
+            <div class="eight wide column">
+                <h1 class="ui huge header center aligned">Account: <span class="member-name"></span></h1>
+                <div class="ui centered card flex">
+                    <div class="ui placeholder">
+                        <div class="image"></div>
+                    </div>
+                    <div class="content">
+                        <p class="header">Name: <span class="case-name"></span></p>
+                        <p class="header">Birthday: <span class="case-birthday"></span></p>
+                        <p class="header">Zip code: <span class="case-zipCode"></span></p>
+                    </div>
+                </div>
+                <h4 class="ui horizontal divider header">
+
+                    Peace of mind is just a click away
+
+                </h4>
+
+            </div>
+
+            <div class="four wide column"></div>
+
+            <div class="sixteen wide column">
+                <a class="ui red tag label" id="toggleMenu">Click to add a new user</a></div>
+            <div class="sixteen wide column"></div>
+            <div class="sixteen wide column"></div>
+            <div class="five wide column">
+
+                <div class="ui items">
+                    <div class="item">
+
+                        <div class="content">
+                            <a class="header">Mortuary</a>
+                            <div class="meta">
+                                <span id="funerals-name">Description</span>
+                            </div>
+                            <div class="description">
+                                <p></p>
+                            </div>
+                            <div class="extra" id="funerals-number">
+                                Additional Details
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <button id="complete-funerals" class="complete-form ui bottom aligned segment secondary button">
+                        <i class="pencil alternate icon"></i>
+                        Complete form
+                    </button>
+                    <button id="update-funerals" class="update-form ui inverted yellow disable bottom aligned segment secondary button">
+                        <i class="edit outline icon"></i>
+                        Update Form
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="three wide column"></div>
+            <div class="three wide column"></div>
+            <div class="five wide column right aligned">
+
+                <div class="ui items">
+                    <div class="item">
+
+                        <div class="content">
+                            <a class="header">Hospice Care</a>
+                            <div class="meta">
+                                <span id="hospices-name">Description</span>
+                            </div>
+                            <div class="description">
+                                <p></p>
+                            </div>
+                            <div class="extra" id="hospices-number">
+                                Additional Details
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <button id="complete-hospices" class="complete-form ui bottom aligned segment secondary button">
+                        <i class="pencil alternate icon"></i>
+                        Compete Form
+                    </button>
+                    <button id="update-hospices" class="update-form ui bottom aligned segment secondary button">
+                        <i class="edit outline icon"></i>
+                        Update Form
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="five wide column right floated">
+
+                <div class="ui items right floated">
+                    <div class="item">
+
+                        <div class="content">
+                            <a class="header">Life Insurance</a>
+                            <div class="meta">
+                                <span id="insurances-name">Description</span>
+                            </div>
+                            <div class="description">
+                                <p></p>
+                            </div>
+                            <div class="extra" id="insurances-number">
+                                Additional Details
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <button id="complete-insurances" class="complete-form ui bottom aligned segment secondary button">
+                        <i class="pencil alternate icon"></i>
+                        Complete Form
+                    </button>
+                    <button id="update-insurances" class="update-form ui bottom aligned segment secondary button" data-business="Life_Insurance">
+                        <i class="edit outline icon"></i>
+                        Update Form
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="three wide column"></div>
+            <div class="three wide column"></div>
+
+            <div class="five wide column float right aligned">
+
+                <div class="ui items right floated">
+                    <div class="item">
+
+                        <div class="content">
+                            <a class="header">Estate Planning</a>
+                            <div class="meta">
+                                <span id="lawyers-name">Description</span>
+                            </div>
+                            <div class="description">
+                                <p></p>
+                            </div>
+                            <div class="extra" id="lawyers-number">
+                                Additional Details
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <button id="complete-lawyers" class="complete-form ui bottom aligned segment secondary button">
+                        <i class="pencil alternate icon"></i>
+                        Complete Form
+                    </button>
+                    <button id="update-lawyers" class="update-form ui bottom aligned segment secondary button update-form">
+                        <i class="edit outline icon"></i>
+                        Update Form
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="sixteen wide column"></div>
+            <div class="sixteen wide column"></div>
+            <div class="sixteen wide column"></div>
+
+            <div class="four wide column"></div>
+            <div class="eight wide column">
+                <div class="ui icon message">
+                    <i class="inbox icon"></i>
+                    <div class="content">
+                        <div class="header">
+                            Finished adding all of your information?
+                        </div>
+                        <p>Click the button bellow to see your information in an easy to read docment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column"></div>
+            <button id="create-doc" class="fluid ui button">Create my document</button>
+            <!-- End of div container and grid -->
+        </div>
+
+        <!-- ui modal -->
+        <div class="ui modal">
+            <i class="close icon"></i>
+            <div class="header">
+                Create New Case
+            </div>
+            <div class="image content">
+                <div class="ui medium image">
+                    <i class="user plus icon"></i>
+                </div>
+                <div class="description">
+                    <div class="ui header">We've auto-chosen a profile image for you.</div>
+                    <div class="field">
+                        <label>Name</label>
+                        <input id="case-name-input" type="text" placeholder="Enter Name">
+                    </div>
+                    <div class="field">
+                        <label>Birthday</label>
+                        <input id="case-date-input" type="date" placeholder="e.g. January 1, 2020">
+                    </div>
+                    <div class="field">
+                        <label>Zip code</label>
+                        <input id="case-zip-input" type="text" placeholder="Zip Code">
+                    </div>
+
+                </div>
+            </div>
+            <div class="actions">
+                <div class="ui black deny button">
+                    Cancel
+                </div>
+                <div id="case-create-submit" class="ui positive right labeled icon button">
+                    Submit
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/userLP.js"></script>
+
+
+
+    <script>
+        $('#toggleMenu').click(function () {
+            $('.ui.labeled.icon.sidebar').sidebar('toggle');
+        });
+
+
+        $('.ui.red.tag.label').transition({
+            animation: 'flash',
+            duration: '15s',
+            looping: 'looping'
+        });
+
+        $(document).on("click", "#create-case", function (even) {
+            $('.ui.modal').modal('show');
+        })
+
+    </script>
+
+
+
+
+</body>
+
+</html>
